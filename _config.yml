@@ -1,0 +1,8 @@
+title: Terminal
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"

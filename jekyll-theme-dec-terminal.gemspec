@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-dec-minimal-markdown"
+  spec.name          = "jekyll-theme-terminal"
   spec.version       = "0.1.0"
   spec.authors       = ["Dec Murphy"]
   spec.email         = ["okdecm@gmail.com"]

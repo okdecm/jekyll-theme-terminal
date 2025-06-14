@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+<div class="posts">
+	<div class="content">
+		{{ content }}
+	</div>
+
+	<ul class="list">
+		{% if site.posts %}
+		{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			<span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+		</li>
+		{% endfor %}
+		{% else %}
+		<li>No posts found.</li>
+		{% endif %}
+	</ul>
+</div>

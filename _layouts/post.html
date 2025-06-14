@@ -1,5 +1,17 @@
 ---
-layout: default
+layout: page
 ---
 
-{{ content }}
+<article class="post">
+	<header>
+		<div class="tags">
+			{% for tag in page.tags %}
+			<a class="tag" href="{{ tag | tag_url }}">{{ tag }}</a>
+			{% endfor %}
+		</div>
+	</header>
+
+	<section class="content">
+		{{ content }}
+	</section>
+</article>

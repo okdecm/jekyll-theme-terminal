@@ -1,0 +1,33 @@
+@import "./colors";
+
+@import "./rogue_highlight";
+
+$gap-tiny: 0.2rem;
+$gap-small: 0.6rem;
+$gap-medium: 1rem;
+$gap-large: 1.6rem;
+$gap-xlarge: 2.4rem;
+
+& {
+	--color-brand: #{$color-rose-lightest};
+	--color-flair: #{$color-red-lightest};
+	--color-highlight: #{$color-emerald-lightest};
+	--color-subtle: #{$color-white-darkest};
+
+	--text-color: #{$color-white};
+	--text-size-tiny: 0.6rem;
+	--text-size-small: 0.8rem;
+	--text-size-medium: 1rem;
+	--text-size-large: 1.2rem;
+	--text-size-xlarge: 1.4rem;
+
+	--background-color: #{$color-black-darkest};
+
+	--surface-color: #{$color-black-darker};
+
+	--gap-tiny: #{$gap-tiny};
+	--gap-small: #{$gap-small};
+	--gap-medium: #{$gap-medium};
+	--gap-large: #{$gap-large};
+	--gap-xlarge: #{$gap-xlarge};
+}
