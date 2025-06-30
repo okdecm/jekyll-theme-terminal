@@ -1,5 +1,10 @@
-# Hello World!
+---
+title: Hello World!
+---
+# Welcome
 This is my first post
+
+It doesn't have much content..
 
 ## Background
 Here is some code:

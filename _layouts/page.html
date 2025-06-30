@@ -4,37 +4,39 @@ layout: container
 
 <div class="page {% if page.id %} page-id-{{ page.id }} {% endif %}">
 	<div class="container">
-		<header>
-			<div class="terminal">
-				<div class="titles line">
-					<a class="site-title" href="{{ site.url }}">
-						{{ site.title | escape }}
-					</a>
+		<div class="stack">
+			<header>
+				<div class="terminal">
+					<div class="titles line">
+						<a class="site-title" href="{{ site.url }}">
+							{{ site.title | escape }}
+						</a>
 
-					{% if page.title %}
-					<span class="separator">/</span>
+						{% if page.title %}
+						<span class="separator">/</span>
 
-					<a class="page-title" href="{{ page.url }}">
-						{{ page.title | escape }}
-					</a>
-					{% endif %} >
+						<a class="page-title" href="{{ page.url }}">
+							{{ page.title | escape }}
+						</a>
+						{% endif %} >
 
-					<span class="input-marker">_</span>
+						<span class="input-marker">_</span>
+					</div>
 				</div>
-			</div>
 
-			<div class="actions">
-				<a class="set-theme-light" href="#" onClick="setTheme('light')">> light</a>
-				<a class="set-theme-dark" href="#" onClick="setTheme('dark')">> dark</a>
-			</div>
-		</header>
+				<div class="actions">
+					<a class="set-theme-light" href="#" onClick="setTheme('light')">> light</a>
+					<a class="set-theme-dark" href="#" onClick="setTheme('dark')">> dark</a>
+				</div>
+			</header>
 
-		<main>
-			{{ content }}
-		</main>
+			<main>
+				{{ content }}
+			</main>
 
-		<footer>
-			{% include footer.html %}
-		</footer>
+			<footer>
+				{% include footer.html %}
+			</footer>
+		</div>
 	</div>
 </div>

@@ -9,14 +9,16 @@ layout: page
 
 	<ul class="list">
 		{% if site.posts %}
-		{% for post in site.posts %}
-		<li>
-			<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			<span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-		</li>
-		{% endfor %}
+			{% for post in site.posts %}
+				<li>
+					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					{% if site.dec_terminal_theme.show_post_dates_on_posts %}
+						<span class="post-date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+					{% endif %}
+				</li>
+			{% endfor %}
 		{% else %}
-		<li>No posts found.</li>
+			<li>No posts found.</li>
 		{% endif %}
 	</ul>
 </div>

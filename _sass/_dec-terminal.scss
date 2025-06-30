@@ -20,24 +20,18 @@ html {
 	h6 {
 		color: var(--color-flair);
 
-		margin-bottom: var(--gap-small);
+		margin: var(--gap-small) 0;
 	}
 
 	h1 {
-		margin-top: var(--gap-large);
-
 		font-size: var(--text-size-large);
 	}
 
 	h2 {
-		margin-top: var(--gap-medium);
-
 		font-size: var(--text-size-medium);
 	}
 
 	h3 {
-		margin-top: var(--gap-small);
-
 		font-size: var(--text-size-small);
 	}
 
@@ -48,7 +42,8 @@ html {
 	}
 
 	p {
-		margin: var(--gap-small) 0;
+		margin-top: var(--gap-small);
+		margin-bottom: var(--gap-medium);
 	}
 
 	pre.highlight {
