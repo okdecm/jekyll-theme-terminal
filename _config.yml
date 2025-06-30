@@ -7,5 +7,7 @@ defaults:
     values:
       layout: "post"
 
+permalink: pretty
+
 dec_terminal_theme:
   show_post_dates_on_posts: true
