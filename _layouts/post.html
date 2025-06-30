@@ -3,13 +3,11 @@ layout: page
 ---
 
 <article class="post">
-	<header>
-		<div class="tags">
-			{% for tag in page.tags %}
+	<section class="tags">
+		{% for tag in page.tags %}
 			<a class="tag" href="{{ tag | tag_url }}">{{ tag }}</a>
-			{% endfor %}
-		</div>
-	</header>
+		{% endfor %}
+	</section>
 
 	<section class="content">
 		{{ content }}
