@@ -1,7 +1,9 @@
-@import "./layouts";
+@use "./themes";
+
+@use "./layouts";
 
 html {
-	@import "./themes";
+	@include themes.contained;
 
 	* {
 		margin: 0;

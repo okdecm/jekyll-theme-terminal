@@ -1,0 +1,29 @@
+@use "sass:meta";
+
+@use "./primitives/colors";
+
+@mixin theme {
+	@include meta.load-css("./third-party/rogue_highlight");
+
+	--gap-tiny: 0.2rem;
+	--gap-small: 0.6rem;
+	--gap-medium: 1rem;
+	--gap-large: 1.6rem;
+	--gap-xlarge: 2.4rem;
+
+	--color-brand: #{colors.$rose-lightest};
+	--color-flair: #{colors.$red-lightest};
+	--color-highlight: #{colors.$emerald-lightest};
+	--color-subtle: #{colors.$white-darkest};
+
+	--text-color: #{colors.$white};
+	--text-size-tiny: 0.6rem;
+	--text-size-small: 0.8rem;
+	--text-size-medium: 1rem;
+	--text-size-large: 1.2rem;
+	--text-size-xlarge: 1.4rem;
+
+	--background-color: #{colors.$black-darkest};
+	--surface-color: #{colors.$black-darker};
+	--raised-color: #{colors.$black};
+}

@@ -1,0 +1,12 @@
+@use "./light";
+@use "./dark";
+
+@mixin contained {
+	&.theme-light {
+		@include light.theme;
+	}
+
+	&.theme-dark {
+		@include dark.theme;
+	}
+}
